@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
 
     Transform target;
     NavMeshAgent agent;
+    public double health = 100;
 
 	void Start ()
     {
@@ -45,4 +46,5 @@ public class Enemy : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
+
 }
